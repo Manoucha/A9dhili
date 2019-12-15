@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+
+        android:id="@+id/et_contenu"
+        android:layout_width="360dp"
+        android:layout_height="121dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="88dp"
+        android:drawablePadding="10dp"
+        android:hint=" vous avez besoin de quoi ? "
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:met_baseColor="@android:color/black"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@android:color/black"
+        app:met_textColorHint="#AFAFAF" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+
+        android:id="@+id/et_tags"
+        android:layout_width="364dp"
+        android:layout_height="59dp"
+        android:layout_marginLeft="30dp"
+        android:drawablePadding="10dp"
+        android:hint=" add tags ! "
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/et_tarif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contenu"
+        app:met_baseColor="@android:color/black"
+        app:met_iconPadding="0dp"
+        app:met_primaryColor="@android:color/black"
+        app:met_textColorHint="#AFAFAF" />
+
+    <EditText
+        android:id="@+id/et_tarif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="tarif"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contenu"
+        app:layout_constraintVertical_bias="0.427" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#1B0E25" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="286dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        android:paddingBottom="20dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_nameUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAllCaps="true"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.617"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.046" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="77dp"
+                android:layout_height="65dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_nameUser"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.054"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:srcCompat="@tools:sample/avatars[4]" />
+
+            <TextView
+                android:id="@+id/tv_contenu"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:background="#150C1B"
+                android:text="besoin de qq pour mapoo skdhkf df"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nameUser"
+                app:layout_constraintVertical_bias="0.375" />
+
+            <Button
+                android:id="@+id/btn_approuver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#0E0A11"
+                android:text="approuver"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.942"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_seeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="#110A15"
+                android:onClick="seeLocation"
+                android:text="see location"
+                android:textColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_tags"
+                android:layout_width="189dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginLeft="120dp"
+                android:text="TextView"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_contenu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_nameUser"
+                app:layout_constraintVertical_bias="0.263" />
+
+            <TextView
+                android:id="@+id/adr_post"
+                android:layout_width="295dp"
+                android:layout_height="29dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginLeft="72dp"
+                android:layout_marginBottom="4dp"
+                android:text="ariana "
+                app:layout_constraintBottom_toTopOf="@+id/btn_approuver"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_etat"
+                android:layout_width="71dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:text="attente"
+                android:textColor="#D2570505"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_contenu"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5"
+                app:layout_constraintVertical_bias="0.4" />
+
+            <TextView
+                android:id="@+id/tv_tarif"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+                android:layout_marginLeft="48dp"
+                android:layout_marginBottom="36dp"
+                android:text="tarif"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="tarif : "
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tv_contenu"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.865" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="adresse : "
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.707" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

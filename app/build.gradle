@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.android.a9dhili"
+        minSdkVersion 15
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    //RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.7'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    //location
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    //material
+    implementation 'com.google.android.material:material:1.0.0'
+    //mapbox
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.5.0'
+    //floatingbutton
+    implementation 'com.google.android.material:material:1.2.0-alpha02'
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    //circle image
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //dialog
+    //Materiel edit text
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //materiel dialog
+
+    implementation 'com.github.javiersantos:MaterialStyledDialogs:2.1'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'com.mapbox.mapboxsdk:mapbox-android-navigation-ui:0.43.0-alpha.1'
+    implementation 'com.android.support:multidex:1.0.3'
+
+
+}

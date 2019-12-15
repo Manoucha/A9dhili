@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">A9dhili</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiaW1lbmVnaGQiLCJhIjoiY2sza3RoeWtrMGt4dzNkbzdmdjZsNWNjdSJ9.cMMhnQlTtLNzCr78Nz0ihg</string>
+    <!-- Recyclerview on map -->
+    <string name="rv_card_name">Location #%1$d</string>
+    <string name="rv_card_bed_info">This location has %1$d beds</string>
+    <string name="toast_instruction">Tap on cards below</string>
+
+
+</resources>
